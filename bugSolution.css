@@ -1,0 +1,12 @@
+/* bugSolution.css */
+.parent {
+  width: 500px; /* Explicitly define parent width */
+}
+
+.child {
+  width: calc(100% - 20px); /* Consistent units */
+  background-color: lightblue;
+  padding: 10px;
+  box-sizing: border-box; /* Important for accurate width calculation */
+}
+/* This solution ensures consistent units and that the parent element's width is explicitly set, preventing unexpected behaviors from calc(). */
